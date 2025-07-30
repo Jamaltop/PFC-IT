@@ -45,7 +45,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Modern Header Design */
+
 .header {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     backdrop-filter: blur(20px);
@@ -59,7 +59,7 @@ html {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-/* Header when scrolled */
+
 .header.scrolled {
     background: rgba(26, 26, 46, 0.98);
     backdrop-filter: blur(20px);
@@ -150,7 +150,7 @@ html {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile Menu Button */
+
 .header__mobile-menu {
     display: none;
     flex-direction: column;
@@ -177,7 +177,7 @@ html {
     transform-origin: center;
 }
 
-/* Mobile Menu Active State */
+
 .header__mobile-menu.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -191,7 +191,7 @@ html {
     transform: rotate(-45deg) translate(7px, -6px);
 }
 
-/* Modern Site Background */
+
 body {
     background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #1a1a2e 100%);
     background-size: 400% 400%;
@@ -217,7 +217,7 @@ body::before {
     z-index: -1;
 }
 
-/* Programming Code Background for Hero */
+
 .hero::after {
     content: '';
     position: absolute;
@@ -240,7 +240,7 @@ body::before {
     75% { background-position: 0% 100%; }
 }
 
-/* Enhanced Sections with Normal Colors */
+
 .hero,
 .about,
 .technologies,
@@ -285,7 +285,7 @@ body::before {
     z-index: 1;
 }
 
-/* Enhanced Hero Section with Normal Colors */
+
 .hero {
     padding: 8rem 0 6rem;
     text-align: center;
@@ -376,7 +376,7 @@ body::before {
     95% { opacity: 0; }
 }
 
-/* Enhanced Section Headers with Normal Colors */
+
 .section-header {
     text-align: center;
     margin-bottom: 3rem;
@@ -1098,7 +1098,7 @@ body::before {
     background: linear-gradient(135deg, #7c3aed, #4f46e5);
 }
 
-/* Enhanced Footer */
+
 .footer {
     background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
     color: rgba(255, 255, 255, 0.9);
@@ -1302,7 +1302,7 @@ body::before {
     box-shadow: var(--shadow-md);
 }
 
-/* Enhanced Buttons with Normal Colors */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -1361,7 +1361,7 @@ body::before {
     color: #333333;
 }
 
-/* Enhanced Hero Content */
+
 .hero__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1378,7 +1378,7 @@ body::before {
     flex-wrap: wrap;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .header__nav {
         display: none;
@@ -1584,7 +1584,7 @@ html {
   }
 }
 
-/* Enhanced Cards with Better Visibility */
+
 .tech-card,
 .service-card,
 .ai-tech-card {
@@ -1619,7 +1619,7 @@ html {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Enhanced About Section */
+
 .about__text h3 {
     color: #333333;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -1640,7 +1640,7 @@ html {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Enhanced Contact Section */
+
 .contact__item h4 {
     color: #333333;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -1651,7 +1651,7 @@ html {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Enhanced Status Badges */
+
 .status-badge {
     color: #ffffff;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -1669,7 +1669,7 @@ html {
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
-/* Enhanced Team Member Cards */
+
 .team-member {
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px);
@@ -1693,7 +1693,7 @@ html {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Enhanced CTA Section */
+
 .cta {
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px);
@@ -1712,13 +1712,13 @@ html {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Enhanced Form Labels */
+
 .form-group label {
     color: #333333;
     font-weight: 500;
 }
 
-/* Enhanced Social Links */
+
 .social-link {
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1735,7 +1735,7 @@ html {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Enhanced Mobile Menu */
+
 .header__nav.active {
     background: rgba(26, 26, 46, 0.98);
     backdrop-filter: blur(20px);
@@ -1766,7 +1766,7 @@ html {
     border-bottom: none;
 }
 
-/* Fix Icons Visibility */
+
 .tech-card__icon img,
 .ai-tech-card__icon img,
 .service-card__icon {
@@ -1793,13 +1793,13 @@ html {
     display: block;
 }
 
-/* Remove any existing icon filters */
+
 .tech-card__icon img[style*="filter"],
 .ai-tech-card__icon img[style*="filter"] {
     filter: none !important;
 }
 
-/* Ensure icons are visible in all states */
+
 .tech-card:hover .tech-card__icon img,
 .ai-tech-card:hover .ai-tech-card__icon img {
     filter: none !important;

@@ -1,6 +1,6 @@
-// PFC IT Website JavaScript
 
-// Intersection Observer for scroll animations
+
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -14,13 +14,12 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all cards for animation
+
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.tech-card, .service-card, .custom-card, .ai-tech-card');
     cards.forEach(card => observer.observe(card));
 });
-
-// Smooth scrolling for navigation links
+    
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -31,7 +30,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 block: 'start'
             });
         }
-        // Close mobile menu if open
+        
         const nav = document.querySelector('.header__nav');
         const mobileMenu = document.querySelector('.header__mobile-menu');
         if (nav && nav.classList.contains('active')) {
@@ -41,7 +40,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Parallax effect for hero section
+
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const parallax = document.querySelector('.hero__visual');
@@ -51,7 +50,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Dynamic header background and scroll detection
+
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     if (window.scrollY > 50) {
@@ -61,7 +60,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Typing animation for hero text
+
 function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.innerHTML = '';
@@ -76,7 +75,7 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
-// Initialize typing animation
+
 document.addEventListener('DOMContentLoaded', () => {
     const heroTitle = document.querySelector('.hero__text h1');
     if (heroTitle) {
@@ -87,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Interactive card effects
+
 document.querySelectorAll('.custom-card').forEach(card => {
     card.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-15px) scale(1.05)';
@@ -98,10 +97,10 @@ document.querySelectorAll('.custom-card').forEach(card => {
     });
 });
 
-// Button click effects
+
 document.querySelectorAll('.btn, .custom-card__btn').forEach(button => {
     button.addEventListener('click', function(e) {
-        // Create ripple effect
+        
         const ripple = document.createElement('span');
         const rect = this.getBoundingClientRect();
         const size = Math.max(rect.width, rect.height);
@@ -121,7 +120,7 @@ document.querySelectorAll('.btn, .custom-card__btn').forEach(button => {
     });
 });
 
-// Add ripple effect styles
+
 const style = document.createElement('style');
 style.textContent = `
     .ripple {
@@ -142,7 +141,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Counter animation for stats
+
 function animateCounter(element, target, duration = 2000) {
     let start = 0;
     const increment = target / (duration / 16);
@@ -159,7 +158,7 @@ function animateCounter(element, target, duration = 2000) {
     updateCounter();
 }
 
-// Initialize counter animations
+
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -175,7 +174,7 @@ document.querySelectorAll('.stat').forEach(stat => {
     statsObserver.observe(stat);
 });
 
-// Mobile menu toggle with animation
+
 const mobileMenu = document.querySelector('.header__mobile-menu');
 const nav = document.querySelector('.header__nav');
 
@@ -185,7 +184,7 @@ if (mobileMenu && nav) {
         mobileMenu.classList.toggle('active');
     });
     
-    // Close menu when clicking outside
+    
     document.addEventListener('click', (e) => {
         if (!mobileMenu.contains(e.target) && !nav.contains(e.target)) {
             nav.classList.remove('active');
@@ -193,7 +192,7 @@ if (mobileMenu && nav) {
         }
     });
     
-    // Close menu on window resize
+   
     window.addEventListener('resize', () => {
         if (window.innerWidth > 768) {
             nav.classList.remove('active');
@@ -202,7 +201,7 @@ if (mobileMenu && nav) {
     });
 }
 
-// Form validation with animations
+
 document.querySelectorAll('form').forEach(form => {
     form.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -229,7 +228,7 @@ document.querySelectorAll('form').forEach(form => {
     });
 });
 
-// Hover effects for technology cards
+
 document.querySelectorAll('.tech-card').forEach(card => {
     card.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-15px) scale(1.05)';
@@ -242,7 +241,7 @@ document.querySelectorAll('.tech-card').forEach(card => {
     });
 });
 
-// Dynamic background gradient
+
 function updateGradient() {
     const hero = document.querySelector('.hero');
     if (hero) {
@@ -253,10 +252,10 @@ function updateGradient() {
     requestAnimationFrame(updateGradient);
 }
 
-// Start gradient animation
+
 updateGradient();
 
-// Performance optimization: Throttle scroll events
+
 function throttle(func, limit) {
     let inThrottle;
     return function() {
@@ -270,12 +269,12 @@ function throttle(func, limit) {
     }
 }
 
-// Apply throttling to scroll events
+
 window.addEventListener('scroll', throttle(() => {
     // Scroll-based animations
 }, 16));
 
-// Add loading animation for images
+
 document.querySelectorAll('img').forEach(img => {
     img.addEventListener('load', function() {
         this.style.opacity = '1';
@@ -287,7 +286,7 @@ document.querySelectorAll('img').forEach(img => {
     img.style.transition = 'all 0.3s ease';
 });
 
-// Interactive cursor effects
+
 document.addEventListener('mousemove', (e) => {
     const cursor = document.querySelector('.cursor');
     if (cursor) {
@@ -296,7 +295,7 @@ document.addEventListener('mousemove', (e) => {
     }
 });
 
-// Add custom cursor
+
 const cursorStyle = document.createElement('style');
 cursorStyle.textContent = `
     .cursor {
@@ -318,12 +317,12 @@ cursorStyle.textContent = `
 `;
 document.head.appendChild(cursorStyle);
 
-// Initialize custom cursor
+
 const cursor = document.createElement('div');
 cursor.className = 'cursor';
 document.body.appendChild(cursor);
 
-// Add hover effect to interactive elements
+
 document.querySelectorAll('a, button, .custom-card, .tech-card, .service-card').forEach(el => {
     el.addEventListener('mouseenter', () => {
         cursor.classList.add('hover');
