@@ -179,7 +179,8 @@ const mobileMenu = document.querySelector('.header__mobile-menu');
 const nav = document.querySelector('.header__nav');
 
 if (mobileMenu && nav) {
-    mobileMenu.addEventListener('click', () => {
+    mobileMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
         nav.classList.toggle('active');
         mobileMenu.classList.toggle('active');
     });
